@@ -1,0 +1,25 @@
+.nav{
+    background-color: #323030;
+    
+}
+.news{
+    height: 100vh;
+    /* background-color: #323030; */
+    width: 100%;
+}
+.news-box-text p{
+    color: black;
+}
+.btt{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 79%;
+    width: 10%;
+    left: 10%;
+}
+p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: start;
+}

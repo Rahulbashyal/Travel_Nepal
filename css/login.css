@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  /* background: url("/assets/images/bg-images/log.jpg")
+    no-repeat center center fixed ; */
+    background-color: #74b2db;
+  background-size: cover;
+  font-family: "Nixie One", cursive, sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 53, 102, 1);
+  opacity: 0.75;
+  /* background-color: #774f86; */
+  /* animation-name: body;
+  animation-duration: 4s; */
+}
+/* @keyframes body {
+    from {background-color: rgba(255, 255, 255, 0.5);}
+    to {background-color: rgba(255, 255, 255, 0.5);}
+  }
+   */
+  
+
+.bg,
+.login_signup_form {
+  position: absolute;
+  height: 38em;
+  width: 30%;
+  transition-duration: 1s;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px #434242;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-item {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  top: 20%;
+}
+
+.bg-item:nth-child(1) {
+  background-color:#774f86;
+  width: 80%;
+  left: -10%;
+  rotate: -45deg;
+}
+.bg-item:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.8);
+  left: -10%;
+  rotate: 80deg;
+}
+.bg-item:nth-child(3) {
+  background-color:#774f86;
+  ;
+  width: 80%;
+  left: 80%;
+  top: -10%;
+  rotate: 40deg;
+}
+.bg-item:nth-child(4) {
+  background-color:#774f86;
+  left: -40%;
+  top: -80%;
+  rotate: 70deg;
+}
+
+.signup {
+  transform: rotateY(-180deg);
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+  margin-top: 8%;
+}
+
+svg path {
+  fill: white;
+}
+
+.user path {
+  fill: rgba(0, 53, 102, 1);
+}
+.fb svg:hover path {
+  fill: rgb(27, 116, 228);
+}
+.google-plus svg:hover path {
+  fill: rgb(219, 71, 59);
+}
+.twitter svg:hover path {
+  fill: rgb(29, 161, 242);
+}
+
+h2,
+input,
+.remember_me:hover,
+.forget-password a:hover,
+.term_conditions_checkbox a,
+button {
+  color: rgba(0, 53, 102, 1);
+}
+
+h2 {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  background-color: rgba(248, 249, 250, 0.5);
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 1em;
+  font-family: "Nixie One", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1.8px;
+  text-align: center;
+  padding: 10px;
+}
+
+input:focus {
+  background-color: transparent;
+  outline: 1px solid rgba(0, 53, 102, 1);
+}
+
+#login_password,
+#confirm_password {
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+  height: auto;
+  width: auto;
+  margin: 0;
+  outline: none;
+}
+
+.checkbox {
+  margin: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.checkbox label,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.forget-password a {
+  margin-left: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.term_conditions_checkbox a {
+  font-size: 1.2em;
+}
+
+.term_conditions_checkbox a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+h4 {
+  color: white;
+}
+
+h4 span {
+  text-decoration: none;
+  color: #eeba0b;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+h4 span:hover {
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgba(248, 249, 250, 0.5);
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 53, 102, 1);
+  font-size: 1.2em;
+}
+
+button:hover {
+  color: white;
+  background-color: rgba(0, 53, 102, 1);
+  box-shadow: 0 0 25px white, 0 0 50px white;
+}
+
+.social-media span {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media span svg {
+  margin-top: 0%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  .login_signup_form,
+  .bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 576px) {
+  .login_signup_form,
+  .bg {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 748px) {
+  .login_signup_form,
+  .bg {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 749px) and (max-width: 992px) {
+  .login_signup_form,
+  .bg {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .login_signup_form,
+  .bg {
+    width: 40%;
+  }
+}
